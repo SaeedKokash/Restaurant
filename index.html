@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurant Website">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Food, Restaurant">
+    <meta name="author" content="Saeed Kokash">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | SIESTA</title>
+    <link rel="icon" type="image/x-icon" href="./assets/topicon.ico">
+
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/style.css">
+
+
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <nav class="navigationtop">
+
+            <a href="./index.html"><img class= "logo" src="./assets/logo.png" alt="logo"> </a>
+
+            <h1 id="title"> Welcome to SIESTA Restaurant</h1>
+            
+
+            <ul class="nav-list">
+                <li> <a href="./index.html">Home</a> </li>
+                <li> <a href="./about.html" target="_blank">About</a> </li>
+                <li> <a href="./contactus.html" target="_blank"> <button>Contact Us</button> </a> </li>  
+            </ul>
+        
+        </nav>
+
+    </header>
+    
+    
+
+    
+
+    <main>
+    
+        <form id="foodForm">
+
+            <label id="formTitle">Insert Your Food Preferences Here</label>
+
+            <label for="foodname">Food Name</label>
+            <input type="text" name="foodname" id="foodname" placeholder="Food Name">
+
+            <label for="foodtype">Type of Food</label>
+            <select name="foodtype" id="foodtype">
+                <option value="">Choose Item ...</option>
+                <option value="Fruit and Vegetables">Fruit and Vegetables</option>
+                <option value="Strachy food">Strachy Food</option>
+                <option value="Dairy">Dairy</option>
+                <option value="Protein">Protein</option>
+                <option value="Fat">Fat</option>
+            </select>
+
+            <label for="foodprice">Price (JD)</label>
+            <input type="text" name="foodprice" id="foodprice" placeholder="Price in (JD)">
+
+           <input type="submit" name="submit" id="submit">
+
+        </form>
+
+        <table id="foodTable">
+
+            <tr id="tableHead">
+
+            </tr>
+
+
+        </table>
+
+    </main> 
+
+    <footer>
+
+        <section class="footer-content">
+
+            <a class="social-media-icons" href="facebookfakepagelink.com" target="_blank"> 
+                <i class="uil uil-facebook-f"></i>
+            </a>
+
+            <a class="social-media-icons" href="instagramfakepagelink.com" target="_blank"> 
+                <i class="uil uil-instagram-alt"></i>
+            </a>
+
+            <a class="social-media-icons" href="twitterfakepagelink.com" target="_blank"> 
+                <i class="uil uil-twitter"></i>
+            </a>
+
+        </section>
+
+        <p class="copyright">&copy;SIESTA Restaurant | Designed by Saeed Kokash</p>
+
+
+    </footer>
+
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
