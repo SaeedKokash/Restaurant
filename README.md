@@ -3,7 +3,7 @@ A new Restaurant project JS03
 
 <hr>
 
-## Task 09 - Update ##
+## Task 11 - Update ##
 
 1. Created a new website and added some styling to the main page
 2. Added a form from HTML and style it with CSS
@@ -19,3 +19,24 @@ A1: my only observation is that I knew what I had to do logical wise, but strugg
 Q2: How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment?
 
 A2: It took me 12 hours to complete with styling and everything, I thought it would take about 3 hours.
+
+<hr>
+<hr>
+
+## Task 12 - Update ##
+
+1. Edited homepage to show only the form
+2. Created a new webpage statistics.html and added the table to it
+3. Edited the app.js file to perfom functions only on the home page 
+4. Learnt the new Local storage method and applied it to save the data with the help of JSON 
+5. Created a new JS file -statistics.js- and added the local storage getitems method with the help of JSON and rendered the table
+
+## Questions Part: ##
+
+Q1: What observations or questions do you have about what you’ve learned so far?
+
+A1: It gets easier with every task and with every practice, I dont have any questions but I'm happy with the work thats done today.
+
+Q2: How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment?
+
+A2: It took me about 2 hours to do the task as I didnt add any styling, the styling was done before. I thought it would take about 4 hours but it was quick and easy.
