@@ -89,3 +89,121 @@ function getData() {
 
     // console.log(allFood);
 }
+
+//setting arrays for chart.js
+
+const chartFoodName = [];
+const chartFoodPrice = [];
+
+for (let i = 0; i < allFood.length; i++) {
+    chartFoodName.push(allFood[i].foodName)
+    chartFoodPrice.push(allFood[i].foodPrice)
+}
+
+//chart.js codes
+
+
+//multiple charts in same page data
+const data = {
+
+    labels: chartFoodName,
+    datasets: [{
+        label: 'My First Food Dataset',
+        data: chartFoodPrice,
+        backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(255, 159, 64, 0.2)',
+            'rgba(255, 205, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(201, 203, 207, 0.2)'
+        ],
+        borderColor: [
+            'rgb(255, 99, 132)',
+            'rgb(255, 159, 64)',
+            'rgb(255, 205, 86)',
+            'rgb(75, 192, 192)',
+            'rgb(54, 162, 235)',
+            'rgb(153, 102, 255)',
+            'rgb(201, 203, 207)'
+        ],
+        borderWidth: 1
+    }]
+};
+
+//multiple charts configs and render
+
+//chart 1 bar
+
+const config = {
+    type: 'bar',
+    data: data,
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        },
+        indexAxis: 'y',
+    },
+};
+
+const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+);
+
+
+
+//chart 2 pie
+
+const config2 = {
+    type: 'pie',
+    data: data,
+
+};
+
+const myChart2 = new Chart(
+    document.getElementById('myChart2'),
+    config2
+);
+
+const moreItemBtn = document.getElementById("addMore");
+moreItemBtn.addEventListener("click", handleClick);
+
+
+function handleClick(event) {
+    event.preventDefault();
+
+    Swal.fire({
+      title: 'Are you sure?',
+      text: "You will lose your Entries!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, Clear it!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+
+        Swal.fire(
+          'Deleted!',
+          'Your Entries have been Cleared.',
+          'success'
+        )
+
+        setTimeout(function(){
+            window.location.href = ("./index.html")
+        }, 2000);
+        
+      }
+    })
+
+}
+
+
+
+
+
+

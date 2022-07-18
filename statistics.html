@@ -19,7 +19,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/statistics.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
 </head>
@@ -38,7 +42,7 @@
             <ul class="nav-list">
                 <li> <a href="./index.html">Home</a> </li>
                 <li> <a href="./about.html" target="_blank">About</a> </li>
-                <li> <a href="./statistics.html"> <button>Statistics</button> </a> </li>
+                <li> <a href="./statistics.html"> <button class="statsBtn">Statistics</button> </a> </li>
             </ul>
 
         </nav>
@@ -47,14 +51,35 @@
 
     <main>
 
-        <table id="foodTable">
+        <div class="tableWBtn">
+            
+            <table id="foodTable">
 
-            <tr id="tableHead">
+                <tr id="tableHead">
+    
+                </tr>
+    
+            </table>
+    
+            <a id="addMoreLink" href="./index.html"> <button id="addMore">More Items?</button> </a>
+            
+        </div>
+        
+       
 
-            </tr>
+        <div class="foodCharts">
+
+            <div class="FoodChart1">
+                <canvas id="myChart"></canvas>
+            </div>
+
+            <div class="FoodChart2">
+                <canvas id="myChart2"></canvas>
+            </div>
+
+        </div>
 
 
-        </table>
 
     </main>
 
