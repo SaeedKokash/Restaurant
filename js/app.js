@@ -36,6 +36,13 @@ function handleSubmit(event) {
     // newFood.tableRender();
 
     saveData();
+
+    Swal.fire(
+        'Thank You!',
+        'Please Check Your Stats at Statistics!',
+        'success'
+      )
+
 }
 
 
@@ -46,3 +53,4 @@ function saveData() {
     localStorage.setItem("UserInput", allFoodString)
 
 }
+

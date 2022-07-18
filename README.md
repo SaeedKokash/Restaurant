@@ -40,3 +40,23 @@ A1: It gets easier with every task and with every practice, I dont have any ques
 Q2: How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment?
 
 A2: It took me about 2 hours to do the task as I didnt add any styling, the styling was done before. I thought it would take about 4 hours but it was quick and easy.
+
+<hr>
+<hr>
+
+## Task 13 - Update ##
+
+1. Added 2 charts using chart.js library in statistics page
+2. Added a success alert when submitting form in homepage using sweetalert library
+3. Added a confirmation button with redirection to home page to add more items in statistics page using sweetalert confirm button
+4. rearranged added stuff using CSS 
+
+## Questions Part: ##
+
+Q1: What observations or questions do you have about what you’ve learned so far?
+
+A1: The task today was fun and easy, learned a few tricks.
+
+Q2: How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment?
+
+A2: The minimum requirement could have been done within 30mins but it took me 2 hours to complete as I wanted to explore more stuff and learned more commands on the way but it was fun anyway.
